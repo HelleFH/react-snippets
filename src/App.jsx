@@ -1,7 +1,7 @@
 
 import React from 'react';
 import Navbar from './components/Navbar';
-import Photos from './components/Gallery';import './css/App.css';
+import Photos from './components/Gallery';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '@fortawesome/fontawesome-free/css/all.min.css';
