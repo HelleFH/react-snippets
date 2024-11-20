@@ -5,41 +5,31 @@ import '@fortawesome/fontawesome-free/css/all.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 
 // Import images
-import navIcon from '../assets/images/nav_icon.svg';  // Path to your nav icon
-import xIcon from '../assets/images/x_icon.svg';  // Path to your x icon
+import navIcon from '../assets/images/nav_icon.svg'; 
+import xIcon from '../assets/images/x_icon.svg';  
 
 const Navbar = () => {
   const [isNavOpen, setIsNavOpen] = useState(false);
-  const [isAnimating, setIsAnimating] = useState(false);
 
   const toggleNav = () => {
-    if (isNavOpen) {
-      setIsAnimating(true);
-      setTimeout(() => {
-        setIsNavOpen(false);
-        setIsAnimating(false);
-      }, 300);
-    } else {
-      setIsNavOpen(true);
-    }
+    setIsNavOpen(!isNavOpen);  // Simply toggle the navbar open/close
   };
 
   return (
     <nav className="navbar navbar-light custom-navbar">
       <a className="toggle-button" onClick={toggleNav}>
         <img
-          src={isNavOpen || isAnimating ? xIcon : navIcon}  // Use the imported icons here
+          src={isNavOpen ? xIcon : navIcon}  // Toggle the icon based on the nav state
           alt="Toggle navigation"
         />
       </a>
 
-      <div className={`nav-links-container ${isNavOpen ? 'open' : ''} ${isAnimating ? 'close' : ''}`}>
+      <div className={`nav-links-container ${isNavOpen ? 'open' : ''}`}>
         <h1 className="menu-header mt-4 mb-4">LOGO</h1>
-        {isNavOpen && <button className="close-button" onClick={toggleNav}>&times;</button>}
         <ul className="navbar-nav flex-row ml-auto d-flex gap-3">
           <li className="nav-item text-light">
             <ScrollLink
-            to="/" 
+              to="/" 
               smooth={true} 
               duration={500}
               className="nav-link" 

@@ -151,10 +151,9 @@ function FindMatches() {
                   </p>
                   <div className="info-button">
                     <a
-                      href="#"
+                      href="/"
                       onClick={(event) => {
                         event.preventDefault();
-                        openModal(character);
                       }}
                     >
                       <FaInfoCircle />

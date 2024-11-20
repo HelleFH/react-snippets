@@ -170,3 +170,9 @@ svg {
     gap:3em;
   }
 }
+:root {
+  --bs-modal-bg: transparent; /* Remove the background */
+  --bs-modal-border-color: transparent; /* Make the border invisible */
+  --bs-modal-border-width: 0; /* Remove the border width */
+  --bs-modal-border-radius: 0; /* Optional: remove rounded corners */
+}
