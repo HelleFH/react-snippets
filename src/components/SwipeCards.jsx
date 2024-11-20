@@ -1,10 +1,11 @@
 import React, { useState, useMemo, useRef, useEffect } from 'react';
-import TinderCard from '../components/react-tinder-card/index';
+import TinderCard from './react-tinder-card/index';
 import profiles from '../data/profiles';
 import { FaTimes, FaHeart, FaUndo, FaStar, FaInfoCircle } from 'react-icons/fa';
-import Modal from '../components/modal';
+import Modal from './modal';
 import { Link } from 'react-router-dom';
-import Photos from '../components/Gallery';
+import Photos from './Gallery';
+import Navbar from './Navbar';
 
 
 function FindMatches() {
@@ -78,7 +79,11 @@ function FindMatches() {
   }, []);
 
   return (
-    <div className="find-matches-content">
+
+    <div >
+              <h2>Tinder-like Swipe Cards</h2>
+
+      <div className="find-matches-content">
       {isModalOpen && (
         <Modal closeModal={closeModal}>
           <div className="modal-content">
@@ -92,7 +97,7 @@ function FindMatches() {
                   {selectedProfile?.name}, {selectedProfile?.age}
                 </h3>
                 <h4>
-                  {selectedProfile?.occupation} - {selectedProfile?.location}
+{selectedProfile?.occupation} - {selectedProfile?.location}
                 </h4>
                 <div className="additional-info">
                   {selectedProfile?.profile_text && (
@@ -172,7 +177,7 @@ function FindMatches() {
           </TinderCard>
         ))}
       </div>
-      <Photos />
+      </div>
           </div>
   );
 }

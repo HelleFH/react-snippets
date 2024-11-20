@@ -1,29 +1,30 @@
+
 import React from 'react';
-import './css/App.css';
-import './css/findMatches.css'
-import './css/buttons.css'
-import './css/findMatchesModal.css'
-import 'bootstrap/dist/css/bootstrap.min.css'; // Add this import at the top
+import Navbar from './components/Navbar';
+import Photos from './components/Gallery';import './css/App.css';
 
-import { HashRouter as Router, Route, Routes } from 'react-router-dom';
-import FindMatches from './pages/FindMatches';
-import IndividualProfile from './pages/individualProfile';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import '@fortawesome/fontawesome-free/css/all.min.css';
+import SwipeCards from './components/SwipeCards';
+import DownloadSection from './components/DownloadSection';
+import './css/styles.scss';  // Import the main SCSS file (this will include all partials)
 
-function App() {
+
+const App = () => {
   return (
-    <Router>
-      <Routes>
-        {/* Add a route for the root path */}
-        <Route path="/" element={<FindMatches />} /> {/* Or any other component you want to display on '/' */}
-        
-        {/* Define other routes */}
-        <Route path="/findmatches" element={<FindMatches />} />
-        <Route path="/individualProfiles/:id" element={<IndividualProfile />} />
-      </Routes>
-    </Router>
+    <div>
+            <Navbar />
+
+          <div className="app-container">
+
+      <SwipeCards />
+
+      <Photos />
+      <DownloadSection />
+    
+    </div>
+    </div>
   );
-}
+};
 
 export default App;
-
-

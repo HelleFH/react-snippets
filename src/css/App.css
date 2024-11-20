@@ -20,7 +20,6 @@ body {
 
 #root {
   color: #333333;
-  width: 100vw;
 }
 
 #root input {
@@ -148,4 +147,27 @@ svg {
   .menu-logo {
     max-width: 120px;
   }
+}
+.app-container {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  max-width: 100%;
+  margin: 0 auto;
+  justify-content: center;
+  padding: 20px;
+}
+
+@media (max-width: 991px) {
+  .app-container {
+    display: flex;
+    max-width: 100%;
+    /* Use full container width */
+    margin: 0 auto;
+    /* Center the grid */
+    justify-content: center;
+    /* Align items centrally */
+    padding: 20px;
+    flex-direction: column;
+  }
+
 }

@@ -1,0 +1,37 @@
+.photos-container {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(250px, 270px));
+    gap: 16px;
+    justify-content: center;
+    background-color: #86a1db;
+    padding: 2em;
+  
+    /* Mobile styling */
+    @media (max-width: 600px) {
+      grid-template-columns: repeat(auto-fill, minmax(100px, 150px));
+      width: 100%;
+      padding: 0;
+      padding-top: 1em;
+      padding-bottom: 1em;
+      /* Set max width to 150px for mobile */
+  
+      .photo-image {
+        max-width: 150px;
+        /* Limit the size of images to 150px on mobile */
+      }
+    }
+  }
+  
+  #gallery-container {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  
+    img {
+      &:hover {
+        transform: scale(1.01);
+        transition: ease-in-out;
+      }
+    }
+  }
+  

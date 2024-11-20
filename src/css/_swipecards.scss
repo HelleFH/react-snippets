@@ -1,20 +1,25 @@
-.find-matches-content {
-  display:grid;
-  grid-template-columns: 1fr 1fr;
+.swipecards-container {
+  display: flex;
+  justify-content: center;
+  padding: 2em;
 }
-
-.find-matches-content h2 {
-  padding-top: 3em;
-  text-align: center;
-} 
 
 .swipe {
   position: absolute;
+  margin-top: 4em;
+}
+
+.modal-dialog-centered {
+  min-height: fit-content !important;
+}
+
+.modal-content {
+  top: 0 !important;
 }
 
 .card-container {
   display: flex;
-  min-height: 70vh;
+  min-height: 80vh;
   position: relative;
   justify-content: center;
   overflow: hidden;
@@ -68,6 +73,10 @@
   color: white;
 }
 
+.gallery-header {
+  text-align: center;
+}
+
 .info-button {
   max-width: -moz-fit-content;
   max-width: fit-content;
@@ -75,6 +84,44 @@
   place-self: flex-end;
   grid-row: 2;
   grid-column: 2;
+}
+
+.infoText {
+  justify-content: center;
+  animation-name: popup !important;
+  animation-duration: 800ms;
+  position: absolute;
+  font-weight: 600;
+  color: #333333;
+  text-align: center;
+  padding-top: 1em;
+}
+
+.download-button {
+  background-color: #f7ffb2;
+  padding: 3em;
+}
+
+.download-button button {
+  font-size: 0.8em;
+  font-weight: 600;
+  font-family: 'Roboto';
+  display: inline-block;
+  background-color: #333;
+  color: #fff !important;
+  padding: 7px 15px;
+  cursor: pointer;
+  text-decoration: none;
+  text-align: center;
+  border: solid 1px #333;
+  border-radius: 20px;
+  transition: background-color 0.4s ease;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.download-button button:hover {
+  background-color: #555;
+  color: #fff !important;
 }
 
 .card {
@@ -88,18 +135,6 @@
 
 .card img {
   border-radius: 15px;
-}
-
-.infoText {
-  width: 100%;
-  justify-content: center;
-  animation-name: popup !important;
-  animation-duration: 800ms;
-  position: absolute;
-  font-weight: 600;
-  color: #333333;
-  text-align: center;
-  padding-top: 1em;
 }
 
 .card-buttons {
@@ -148,7 +183,6 @@
 
 .card-buttons a:nth-child(2) svg:active {
   color: rgb(137, 188, 77);
-
 }
 
 .card-buttons a {
@@ -187,25 +221,12 @@
 }
 
 @media (min-width: 767px) {
-
-  .card-container {
-    min-height: 100vh;
-  }
-
   .find-matches-content h2 {
     padding-top: 5em;
   }
 
-  .find-matches-content {
-    padding-bottom: 5em;
-  }
-
   .card {
-    max-width: 350px;
-  }
-
-  .card-container {
-    margin-top: 0em;
+    max-width: 300px;
   }
 
   .card-information p {
