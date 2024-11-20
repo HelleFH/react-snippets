@@ -2,7 +2,7 @@
   "name": "react-website",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://hellefh.github.io/react-app",
+  "homepage": "https://hellefh.github.io/react-snippets",
   "dependencies": {
     "@fortawesome/fontawesome-free": "^6.7.0",
     "@fortawesome/fontawesome-svg-core": "^6.4.2",
@@ -62,7 +62,7 @@
     "@babel/core": "^7.23.0",
     "@babel/preset-env": "^7.22.20",
     "eslint": "^8.57.0",
-    "gh-pages": "^6.1.1",
+    "gh-pages": "^6.2.0",
     "sass": "^1.81.0",
     "sass-loader": "^16.0.3",
     "webpack": "^5.96.1"

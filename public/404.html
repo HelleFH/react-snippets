@@ -2,13 +2,18 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>404 Page Not Found</title>
-  <script>
-    // Redirect to the root URL (your index.html)
-    window.location.href = '/index.html';
-  </script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>React App</title>
+  <!-- Link to your favicon if you have one -->
+  <link rel="icon" href="%PUBLIC_URL%/favicon.ico">
+  <!-- Link to the manifest for PWA support -->
+  <link rel="manifest" href="%PUBLIC_URL%/manifest.json">
 </head>
 <body>
-  <p>If you are not redirected, <a href="/index.html">click here</a>.</p>
+  <!-- This is where React will mount the app -->
+  <div id="root"></div>
+
+  <!-- The bundled JS and CSS will be injected here by React during build -->
+  <script src="%PUBLIC_URL%/static/js/bundle.js"></script>
 </body>
 </html>
