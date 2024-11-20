@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/react-snippets/static/css/main.015cce15.css",
-    "main.js": "/react-snippets/static/js/main.3a3d2bd7.js",
+    "main.css": "/react-snippets/static/css/main.756956eb.css",
+    "main.js": "/react-snippets/static/js/main.9e28466e.js",
     "static/media/6.png": "/react-snippets/static/media/6.70bc2953b401692dd22f.png",
     "static/media/2.png": "/react-snippets/static/media/2.f1e9f26701f0ff4136d3.png",
     "static/media/5.png": "/react-snippets/static/media/5.d7dc274334d60c1e5f97.png",
@@ -39,11 +39,11 @@
     "static/media/nav_icon.svg": "/react-snippets/static/media/nav_icon.ff3138af056ed1cfabb7b6f386b2f905.svg",
     "index.html": "/react-snippets/index.html",
     "static/media/x_icon.svg": "/react-snippets/static/media/x_icon.b023d25029c20bd1b7025479c0bf9f58.svg",
-    "main.015cce15.css.map": "/react-snippets/static/css/main.015cce15.css.map",
-    "main.3a3d2bd7.js.map": "/react-snippets/static/js/main.3a3d2bd7.js.map"
+    "main.756956eb.css.map": "/react-snippets/static/css/main.756956eb.css.map",
+    "main.9e28466e.js.map": "/react-snippets/static/js/main.9e28466e.js.map"
   },
   "entrypoints": [
-    "static/css/main.015cce15.css",
-    "static/js/main.3a3d2bd7.js"
+    "static/css/main.756956eb.css",
+    "static/js/main.9e28466e.js"
   ]
 }
