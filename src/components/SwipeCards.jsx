@@ -80,48 +80,11 @@ function FindMatches() {
 
   return (
 
-    <div >
+  
 
-      <div className="find-matches-content">
+      <div className='swipecards-container'>
       <h2>Tinder-like Swipe Cards</h2>
 
-      {isModalOpen && (
-        <Modal closeModal={closeModal}>
-          <div className="modal-content">
-            <div key={selectedProfile?.id} className="other-profile">
-              <div className="other-profile-personal-info">
-                <img
-                  src={selectedProfile?.image}
-                  alt={`${selectedProfile?.name}'s selectedProfile`}
-                />
-                <h3>
-                  {selectedProfile?.name}, {selectedProfile?.age}
-                </h3>
-                <h4>
-{selectedProfile?.occupation} - {selectedProfile?.location}
-                </h4>
-                <div className="additional-info">
-                  {selectedProfile?.profile_text && (
-                    <div>
-                      <p>{selectedProfile.profile_text.substring(0, 100)}...</p>
-                    </div>
-                  )}
-                </div>
-                <div className="other-profile-buttons">
-                  <button className="otherProfile-button" onClick={closeModal}>
-                    Back
-                  </button>
-                  <button className="otherProfile-button">
-                    <Link to={`/individualProfiles/${selectedProfile?.id}`}>
-                      View Profile
-                    </Link>
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </Modal>
-      )}
 
       {showSwipedMessage && (
         <h3 className="infoText">You swiped {lastDirection}</h3>
@@ -178,7 +141,7 @@ function FindMatches() {
         ))}
       </div>
       </div>
-          </div>
+         
   );
 }
 
