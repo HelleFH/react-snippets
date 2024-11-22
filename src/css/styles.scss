@@ -3,3 +3,9 @@
 @import 'buttons';   
 @import 'swipecards';   
 @import 'style';     
+
+.product-image {
+    position: absolute;
+    z-index: 9; /* Ensures the image stays below the overlay */
+    width: 100%; /* Adjust size as needed */
+  }

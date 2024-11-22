@@ -2,6 +2,7 @@
 import React from 'react';
 import Navbar from './components/Navbar';
 import Photos from './components/Gallery';
+import ColorChooser from './components/ColorChange';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '@fortawesome/fontawesome-free/css/all.min.css';
@@ -11,7 +12,10 @@ import './css/styles.scss';  // Import the main SCSS file (this will include all
 
 
 const App = () => {
+  
   return (
+
+    
     <div>
             <Navbar />
 
@@ -21,6 +25,7 @@ const App = () => {
 
       <Photos />
       <DownloadSection />
+      <ColorChooser />
     
     </div>
     </div>
