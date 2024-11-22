@@ -7,7 +7,8 @@ const ColorChooser = () => {
     const [selectedColor, setSelectedColor] = useState('');
 
     // List of predefined colors (can be customized)
-    const availableColors = ['#FF5733', '#33FF57', '#3357FF', '#F1C40F', '#8E44AD', '#1ABC9C',];
+    const availableColors = ['#86a1db', '#b4dfff', '#f7ffb2', '#ffdca7', '#ffa3bf'];
+
 
     // Handle color selection from the list
     const handleColorSelect = (color) => {
@@ -53,7 +54,7 @@ const ColorChooser = () => {
                             width: '100%',
                             height: '100%',
                             objectFit: 'contain',
-                            opacity: 0.5,
+                            opacity: 0.4,
                             transform: 'translateY(-1000px)',
                         }}
                         src={image}
