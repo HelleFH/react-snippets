@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/react-snippets/static/css/main.756956eb.css",
-    "main.js": "/react-snippets/static/js/main.9e28466e.js",
+    "main.css": "/react-snippets/static/css/main.3f3f092e.css",
+    "main.js": "/react-snippets/static/js/main.8170c5ae.js",
     "static/media/6.png": "/react-snippets/static/media/6.70bc2953b401692dd22f.png",
     "static/media/2.png": "/react-snippets/static/media/2.f1e9f26701f0ff4136d3.png",
     "static/media/5.png": "/react-snippets/static/media/5.d7dc274334d60c1e5f97.png",
@@ -10,6 +10,7 @@
     "static/media/3.png": "/react-snippets/static/media/3.5d6b011a9a7972f5a4cc.png",
     "static/media/4.png": "/react-snippets/static/media/4.69f44fb42e60cda44221.png",
     "static/media/fa-solid-900.ttf": "/react-snippets/static/media/fa-solid-900.42c745469c29afbc4e98.ttf",
+    "static/media/colorchage-image.png": "/react-snippets/static/media/colorchage-image.3a2f34801ee0af65316e.png",
     "static/media/fa-brands-400.ttf": "/react-snippets/static/media/fa-brands-400.4e755efff9e2ad0cc4ce.ttf",
     "static/media/user-image(9).png": "/react-snippets/static/media/user-image(9).5816d6486623f3a9c012.png",
     "static/media/user-image(6).png": "/react-snippets/static/media/user-image(6).e4720908dfd457a0210d.png",
@@ -39,11 +40,11 @@
     "static/media/nav_icon.svg": "/react-snippets/static/media/nav_icon.ff3138af056ed1cfabb7b6f386b2f905.svg",
     "index.html": "/react-snippets/index.html",
     "static/media/x_icon.svg": "/react-snippets/static/media/x_icon.b023d25029c20bd1b7025479c0bf9f58.svg",
-    "main.756956eb.css.map": "/react-snippets/static/css/main.756956eb.css.map",
-    "main.9e28466e.js.map": "/react-snippets/static/js/main.9e28466e.js.map"
+    "main.3f3f092e.css.map": "/react-snippets/static/css/main.3f3f092e.css.map",
+    "main.8170c5ae.js.map": "/react-snippets/static/js/main.8170c5ae.js.map"
   },
   "entrypoints": [
-    "static/css/main.756956eb.css",
-    "static/js/main.9e28466e.js"
+    "static/css/main.3f3f092e.css",
+    "static/js/main.8170c5ae.js"
   ]
 }
