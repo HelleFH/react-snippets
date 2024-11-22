@@ -22,10 +22,10 @@ const App = () => {
           <div className="app-container">
 
       <SwipeCards />
+      <ColorChooser />
 
       <Photos />
       <DownloadSection />
-      <ColorChooser />
     
     </div>
     </div>

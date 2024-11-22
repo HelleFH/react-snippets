@@ -42,8 +42,9 @@ const Photos = () => {
   return (
     <>
       <div id="gallery-container">
-        <h2 className='gallery-header'>This is a lightbox gallery made with Bootstrap</h2>
         <div className="photos-container" id="photos">
+        <h2 className='gallery-header'>This is a lightbox gallery made with Bootstrap</h2>
+
           {photos.map((photo, index) => (
             <div key={photo.id} className="photo-wrapper" style={{ position: 'relative' }}>
               <div className="image-wrapper" onClick={() => handleImageClick(index)} style={{ cursor: 'pointer' }}>

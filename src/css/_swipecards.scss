@@ -73,9 +73,7 @@
   color: white;
 }
 
-.gallery-header {
-  text-align: center;
-}
+
 
 .info-button {
   max-width: -moz-fit-content;
@@ -222,9 +220,6 @@
 }
 
 @media (min-width: 767px) {
-  .find-matches-content h2 {
-    padding-top: 5em;
-  }
 
   .card {
     max-width: 300px;

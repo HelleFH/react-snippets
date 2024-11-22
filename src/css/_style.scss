@@ -158,7 +158,9 @@ svg {
   max-width: 1175px;
   margin: 0 auto;
   justify-content: center;
-  padding: 2em 1em;
+  align-items: flex-start;
+  padding: 5em 1em;
+  gap:2em;
 
   @media (max-width: 991px) {
     display: flex;

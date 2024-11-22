@@ -81,9 +81,10 @@ function FindMatches() {
   return (
 
     <div >
-              <h2>Tinder-like Swipe Cards</h2>
 
       <div className="find-matches-content">
+      <h2>Tinder-like Swipe Cards</h2>
+
       {isModalOpen && (
         <Modal closeModal={closeModal}>
           <div className="modal-content">

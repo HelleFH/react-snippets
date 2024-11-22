@@ -38,6 +38,11 @@ padding:2em;
     }
   }
 }
+
+.gallery-header {
+  text-align: center;
+  grid-column: 1/span 3;
+}
 .chevron-left:hover,
 .chevron-right:hover {
   width: 40px;
@@ -54,5 +59,7 @@ padding:2em;
     border-radius: 0;
     background-color: transparent !important;
   }
-  
+  .gallery-header {
+    grid-column: 1/span 2;
+  }
 }
