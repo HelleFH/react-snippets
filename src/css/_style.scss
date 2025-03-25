@@ -27,11 +27,11 @@ body {
     font-size: 0.9em;
     padding-left: 0.5em;
     font-weight: 600;
-    
+
     &::-moz-placeholder {
       font-size: 0.9em;
     }
-    
+
     &::placeholder {
       font-size: 0.9em;
     }
@@ -162,7 +162,7 @@ svg {
   justify-content: center;
   align-items: flex-start;
   padding: 5em 1em;
-  gap:2em;
+  gap: 2em;
 
   @media (max-width: 991px) {
     display: flex;
@@ -171,12 +171,29 @@ svg {
     justify-content: center;
     padding: 20px;
     flex-direction: column;
-    gap:3em;
+    gap: 3em;
   }
 }
+
 :root {
-  --bs-modal-bg: transparent; /* Remove the background */
-  --bs-modal-border-color: transparent; /* Make the border invisible */
-  --bs-modal-border-width: 0; /* Remove the border width */
-  --bs-modal-border-radius: 0; /* Optional: remove rounded corners */
+  --bs-modal-bg: transparent;
+  /* Remove the background */
+  --bs-modal-border-color: transparent;
+  /* Make the border invisible */
+  --bs-modal-border-width: 0;
+  /* Remove the border width */
+  --bs-modal-border-radius: 0;
+  /* Optional: remove rounded corners */
+}
+
+
+
+.content-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap:2rem;
+  align-items: center;
+  justify-content: center;
+  height:100%;
 }

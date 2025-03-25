@@ -3,7 +3,7 @@ import React from 'react';
 import Navbar from './components/Navbar';
 import Photos from './components/Gallery';
 import ColorChooser from './components/ColorChange';
-
+import TestimonialCarousel from './components/slider';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '@fortawesome/fontawesome-free/css/all.min.css';
 import SwipeCards from './components/SwipeCards';
@@ -26,7 +26,10 @@ const App = () => {
       <ColorChooser />
 
       <Photos />
+      <div className='content-container'>
       <DownloadSection />
+      <TestimonialCarousel/>
+      </div>
     </div>
     <Footer />
 
