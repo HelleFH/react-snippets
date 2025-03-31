@@ -7,34 +7,44 @@ import styled from 'styled-components';
 const funFacts = [
   {
     ID: 1,
-    title: 'Did You Know?',
-    fact: 'Honey never spoils. Archaeologists have found pots of honey in ancient Egyptian tombs that are over 3,000 years old and still perfectly good to eat!',
+    title: 'React Origin',
+    fact: 'React was created by Jordan Walke, a software engineer at Facebook, in 2013.',
   },
   {
     ID: 2,
-    title: 'Space Fact',
-    fact: 'A day on Venus is longer than a year on Venus. It takes 243 Earth days to rotate once, but only 225 Earth days to orbit the Sun.',
+    title: 'Virtual DOM',
+    fact: 'React uses a Virtual DOM to optimize rendering and improve performance.',
   },
   {
     ID: 3,
-    title: 'Animal Wonder',
-    fact: 'Octopuses have three hearts and their blood is blue due to the presence of hemocyanin.',
+    title: 'Component-Based',
+    fact: 'React is component-based, allowing developers to reuse UI elements efficiently.',
   },
   {
     ID: 4,
-    title: 'Nature Surprise',
-    fact: 'Bananas are berries, but strawberries are not! Botanically speaking, a berry must have seeds and pulp that develop from a single flower ovary.',
+    title: 'Hooks Revolution',
+    fact: 'React Hooks, introduced in React 16.8, allow functional components to use state and lifecycle features.',
+  },
+  {
+    ID: 5,
+    title: 'React Native',
+    fact: 'React Native enables building mobile apps using React, compiling to native code for iOS and Android.',
+  },
+  {
+    ID: 6,
+    title: 'JSX Power',
+    fact: 'React uses JSX, a syntax extension that allows writing HTML-like code within JavaScript.',
   },
 ];
 
 const CarouselContainer = styled.div`
   max-width: 500px;
+  width:96vw;
   padding: 2rem;
-  background-color:#ffa3bf;
+  background-color: #ffa3bf;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
   text-align: center;
-    color: #212427;
-
+  color: #212427;
 `;
 
 const Title = styled.h1`
