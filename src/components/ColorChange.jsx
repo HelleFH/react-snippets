@@ -21,7 +21,7 @@ const ColorChooser = () => {
     return (
 
 
-        <div className='p-2 d-flex flex-column justify-content-center align-items-center' style={{maxWidth:'600px'}}>
+        <div className='p-2 d-flex flex-column justify-content-center align-items-center' style={{width:'100%', maxWidth:'600px'}}>
 
             <h2>Color Overlay</h2>
             <p><strong>Here you can add a colored overlay to an image with a transparent background. The overlay is applied by loading the image twice and using a dropshadow with the chosen color.</strong></p>
