@@ -12,14 +12,14 @@ const Navbar = () => {
   const [isNavOpen, setIsNavOpen] = useState(false);
 
   const toggleNav = () => {
-    setIsNavOpen(!isNavOpen);  // Simply toggle the navbar open/close
+    setIsNavOpen(!isNavOpen);  
   };
 
   return (
     <nav className="navbar navbar-light custom-navbar">
       <a className="toggle-button" onClick={toggleNav}>
         <img
-          src={isNavOpen ? xIcon : navIcon}  // Toggle the icon based on the nav state
+          src={isNavOpen ? xIcon : navIcon}
           alt="Toggle navigation"
         />
       </a>
