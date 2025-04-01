@@ -1,20 +1,18 @@
 import PropTypes from 'prop-types';
 import React, { useState } from 'react';
 import styled from 'styled-components';
-import image from '../assets/images/colorchage-image.png';  // Path to your image
+import image from '../assets/images/colorchage-image.png';  
 
 const ColorChooser = () => {
     const [selectedColor, setSelectedColor] = useState('');
 
-    // List of predefined colors (can be customized)
     const availableColors = ['#86a1db', '#b4dfff', '#f7ffb2', '#ffdca7', '#ffa3bf'];
 
 
-    // Handle color selection from the list
     const handleColorSelect = (color) => {
         // Toggle the color selection
         if (selectedColor === color) {
-            setSelectedColor(''); // Deselect if the same color is clicked
+            setSelectedColor(''); 
         } else {
             setSelectedColor(color); // Set the new color
         }
@@ -23,7 +21,7 @@ const ColorChooser = () => {
     return (
 
 
-        <div className='p-2 d-flex flex-column justify-content-center align-items-center'>
+        <div className='p-2 d-flex flex-column justify-content-center align-items-center' style={{maxWidth:'600px'}}>
 
             <h2>Color Overlay</h2>
             <p><strong>Here you can add a colored overlay to an image with a transparent background. The overlay is applied by loading the image twice and using a dropshadow with the chosen color.</strong></p>
@@ -31,7 +29,7 @@ const ColorChooser = () => {
                 <ImageLoader
                     alt="Product"
                     className="product-modal-image"
-                    src={image} // Use the imported image
+                    src={image} 
                     style={{
                         width: '100%',
                         height: '100%',
@@ -41,7 +39,6 @@ const ColorChooser = () => {
                         zIndex: -1,
                     }}
                 />
-                {/* Conditionally render the duplicate image only when a color is selected */}
                 {selectedColor && (
                     <ImageLoader
                         alt="Product with color filter"
@@ -67,8 +64,8 @@ const ColorChooser = () => {
                     <ColorItem
                         key={color}
                         color={color}
-                        onClick={() => handleColorSelect(color)} // Handle color selection
-                        isSelected={selectedColor === color} // Highlight selected color
+                        onClick={() => handleColorSelect(color)} 
+                        isSelected={selectedColor === color}
                     />
                 ))}
             </ColorListContainer>
@@ -76,10 +73,6 @@ const ColorChooser = () => {
     );
 };
 
-// Prop validation (No need to pass any props anymore)
-ColorChooser.propTypes = {
-    // No props needed now since you're not passing anything from a parent
-};
 
 
 // Styled-components
@@ -88,6 +81,7 @@ const ColorListContainer = styled.div`
   justify-content: center;
   gap: 10px;
   margin-top: 20px;
+  width:100%;
 `;
 
 

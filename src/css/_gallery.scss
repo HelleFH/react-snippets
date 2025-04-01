@@ -1,15 +1,14 @@
 .photos-container {
   display: grid;
   grid-template-columns: repeat(3, minmax(200px, 220px));
-  gap: 16px;
+  gap: 1rem;
   justify-content: center;
   background-color: #86a1db;
 padding:2em;
 
-  width:fit-content;
+  width:700px;
 
 
-  /* Mobile styling */
   @media (max-width: 600px) {
 display:flex;
 flex-direction: column;

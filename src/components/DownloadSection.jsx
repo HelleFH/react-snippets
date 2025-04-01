@@ -2,7 +2,7 @@ import React from 'react';
 
 const DownloadSection = () => {
   return (
-    <div className="download-button">
+    <div className="download-button" style={{maxWidth:'200px'}}>
       <h2>Download File</h2>
       <h3>This is a button that allows users to download a file from your site:</h3>
       {/* Use anchor (<a>) tag for download */}
