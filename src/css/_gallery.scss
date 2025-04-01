@@ -11,17 +11,18 @@ padding:2em;
 
   /* Mobile styling */
   @media (max-width: 600px) {
-    grid-template-columns: repeat(auto-fill, minmax(100px, 150px));
+display:flex;
+flex-direction: column;
     padding: 0;
     padding-top: 1em;
     padding-bottom: 1em;
     width:100%;
 
-    /* Set max width to 150px for mobile */
 
     .photo-image {
-      max-width: 150px;
-      /* Limit the size of images to 150px on mobile */
+      max-width: 96%;
+      margin:0 auto;
+     
     }
   }
 }
