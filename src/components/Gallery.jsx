@@ -4,8 +4,7 @@ import { Modal } from 'react-bootstrap';
 import { useSwipeable } from 'react-swipeable';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons';
-import xIcon from '../assets/images/x_icon.svg';  // Path to your x icon
-
+import xIcon from '../assets/images/x_icon.svg';
 
 const Photos = () => {
   const [photos, setPhotos] = useState([]);
@@ -13,7 +12,7 @@ const Photos = () => {
   const [selectedPhotoIndex, setSelectedPhotoIndex] = useState(null);
 
   useEffect(() => {
-    setPhotos(photosData); // Set the photos data when the component mounts
+    setPhotos(photosData); 
   }, []);
 
   const handleClose = () => {
