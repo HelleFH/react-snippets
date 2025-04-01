@@ -9,7 +9,7 @@ import '@fortawesome/fontawesome-free/css/all.min.css';
 import SwipeCards from './components/SwipeCards';
 import DownloadSection from './components/DownloadSection';
 import Footer from './components/Footer';
-import './css/styles.scss';  // Import the main SCSS file (this will include all partials)
+import './css/styles.scss';  
 
 
 const App = () => {
